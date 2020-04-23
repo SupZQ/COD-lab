@@ -5,7 +5,7 @@
 
 - schedule
 
-	- lab 1. Arithmetic and sorting (1 week)
+	- lab 1：Arithmetic and sorting (1 week)
 
 	- lab 2: register heap and queue (1 week)
 
