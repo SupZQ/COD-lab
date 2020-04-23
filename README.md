@@ -11,7 +11,7 @@
 
 	- lab 3： single cycle CPU (1 week)
 
-	-lab 4：Multi cycle CPU (2 weeks)
+	- lab 4：Multi cycle CPU (2 weeks)
 
 	- lab 5： Pipeline CPU (3 weeks)
 
