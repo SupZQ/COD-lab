@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Apr 23 00:42:19 2020
-# Process ID: 8468
+# Start of session at: Mon Apr 27 12:12:26 2020
+# Process ID: 13144
 # Current directory: C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT/lab1_ALU_SORT.runs/synth_1
-# Command line: vivado.exe -log alu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu.tcl
-# Log file: C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT/lab1_ALU_SORT.runs/synth_1/alu.vds
+# Command line: vivado.exe -log sort.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sort.tcl
+# Log file: C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT/lab1_ALU_SORT.runs/synth_1/sort.vds
 # Journal file: C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT/lab1_ALU_SORT.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source alu.tcl -notrace
+source sort.tcl -notrace

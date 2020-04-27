@@ -32,21 +32,21 @@ module alu
     always @(*)
       begin
         case(m)
-          000:
+          3'b000:
             begin
               {cf,y} = a + b;
               of = (~a[WIDTH-1]&~b[WIDTH-1]&y[WIDTH-1])
                     |(a[WIDTH-1]&b[WIDTH-1]&~y[WIDTH-1]);
             end
-          001:
+          3'b001:
             begin
               {cf,y} = a - b;
               of = (~a[WIDTH-1]&b[WIDTH-1]&y[WIDTH-1])
                     |(a[WIDTH-1]&~b[WIDTH-1]&~y[WIDTH-1]);
             end
-          010:y = a & b;
-          011:y = a | b;
-          100:y = a ^ b;
+          3'b010:y = a & b;
+          3'b011:y = a | b;
+          3'b100:y = a ^ b;
           default:
             begin y = 32'd0;zf = 0;cf = 0;of = 0; end
         endcase

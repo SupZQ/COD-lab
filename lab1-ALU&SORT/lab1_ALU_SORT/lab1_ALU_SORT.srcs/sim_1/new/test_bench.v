@@ -55,14 +55,16 @@ initial
 begin
         m=3'b000;a=32'h7FFF_FFFF;b=32'h7FFF_FFFF;
     #5  m=3'b000;a=32'h7FFF_FFFF;b=32'h0000_0001;
-    #10 m=3'b001;a=32'h8000_0001;b=32'h8000_0001;
-    #15 m=3'b001;a=32'h8000_0001;b=32'h7FFF_FFFF;
-    #20 m=3'b010;a=32'hAAAA_AAAA;b=32'hAAAA_AAAA;
-    #25 m=3'b010;a=32'hAAAA_AAAA;b=32'h5555_5555;
-    #30 m=3'b011;a=32'hAAAA_AAAA;b=32'hAAAA_AAAA;
-    #35 m=3'b010;a=32'hAAAA_AAAA;b=32'h5555_5555;
-    #40 m=3'b011;a=32'hAAAA_AAAA;b=32'hAAAA_AAAA;
-    #45 m=3'b010;a=32'hAAAA_AAAA;b=32'h5555_5555;
+    #5 m=3'b000;a=32'hFFFF_FFFF;b=32'hFFFF_FFFF;
+    #5 m=3'b001;a=32'h8000_0001;b=32'h8000_0001;
+    #5 m=3'b001;a=32'h8000_0001;b=32'h7FFF_FFFF;
+    #5 m=3'b001;a=32'h0000_0001;b=32'h0000_0002;
+    #5 m=3'b010;a=32'hAAAA_AAAA;b=32'hAAAA_AAAA;
+    #5 m=3'b010;a=32'hAAAA_AAAA;b=32'h5555_5555;
+    #5 m=3'b011;a=32'hAAAA_AAAA;b=32'hAAAA_AAAA;
+    #5 m=3'b011;a=32'hAAAA_AAAA;b=32'h5555_5555;
+    #5 m=3'b100;a=32'hAAAA_AAAA;b=32'hAAAA_AAAA;
+    #5 m=3'b100;a=32'hAAAA_AAAA;b=32'h5555_5555;
     $finish;
 end
 
