@@ -1,4 +1,4 @@
-#COD lab
+# COD lab
 - Objective: to design and implement a real (non virtual or simulated) simple but complete computer hardware system
 
 - Experimental tools: vivado 2019.1, Verilog HDL, nexsy4 DDR experimental board
