@@ -1,7 +1,7 @@
 # <center>《计算机组成原理》<br/>实验报告</center>
 
 
-<font color=red>此文档图片大小不适配，请参看pdf文档</font>
+<font color=red>**此文档图片大小不适配，请参看pdf文档**</font>
 
 
 
