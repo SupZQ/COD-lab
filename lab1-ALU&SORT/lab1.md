@@ -6,7 +6,7 @@
 
 
 
-<img src="https://github.com/SupZQ/COD-lab/blob/master/lab1-ALU%26SORT/lab1.assets/%E6%A0%A1%E5%BE%BD.jpg" alt="校徽" style="zoom:5%;" align="center" />
+<img src="https://github.com/SupZQ/COD-lab/blob/master/lab1-ALU%26SORT/lab1.assets/%E6%A0%A1%E5%BE%BD.jpg" alt="校徽" style="zoom:1%;" align="center" />
 
 
 
