@@ -7,10 +7,10 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Register_default
-Compiling module xil_defaultlib.MUX2to1
-Compiling module xil_defaultlib.MUX3to1
-Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.Register(N=4)
+Compiling module xil_defaultlib.MUX2to1(N=4)
+Compiling module xil_defaultlib.MUX3to1(N=4)
+Compiling module xil_defaultlib.alu(WIDTH=4)
 Compiling module xil_defaultlib.sort
 Compiling module xil_defaultlib.tb_sort
 Compiling module xil_defaultlib.glbl

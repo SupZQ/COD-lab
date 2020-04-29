@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module sort #(parameter N = 32)(
+module sort #(parameter N = 4)(
     output [N-1:0] s0,s1,s2,s3, //排序后的四个数据
     output reg done,    //排序结束标志
     input [N-1:0] x0,x1,x2,x3,  //待排序的数字
@@ -44,19 +44,19 @@ module sort #(parameter N = 32)(
     parameter CX01SS = 3'b110;
     parameter HALT = 3'b111;
     //Data Path
-    Register R0(.in(i0),.en(en0),.rst(rst),.clk(clk),.out(s0));
-    Register R1(.in(i1),.en(en1),.rst(rst),.clk(clk),.out(s1));
-    Register R2(.in(i2),.en(en2),.rst(rst),.clk(clk),.out(s2));
-    Register R3(.in(i3),.en(en3),.rst(rst),.clk(clk),.out(s3));
+    Register #(4) R0(.in(i0),.en(en0),.rst(rst),.clk(clk),.out(s0));
+    Register #(4) R1(.in(i1),.en(en1),.rst(rst),.clk(clk),.out(s1));
+    Register #(4) R2(.in(i2),.en(en2),.rst(rst),.clk(clk),.out(s2));
+    Register #(4) R3(.in(i3),.en(en3),.rst(rst),.clk(clk),.out(s3));
 
-    MUX2to1 M0(.m(m0),.d0(s0),.d1(s2),.out(a));
-    MUX2to1 M1(.m(m1),.d0(s1),.d1(s3),.out(b));
-    MUX2to1 M2(.m(m2),.d0(x0),.d1(s1),.out(i0));
-    MUX3to1 M3(.m(m3),.d0(x1),.d1(s0),.d2(s2),.out(i1));
-    MUX3to1 M4(.m(m4),.d0(x2),.d1(s1),.d2(s3),.out(i2));
-    MUX2to1 M5(.m(m5),.d0(x3),.d1(s2),.out(i3));
+    MUX2to1 #(4) M0(.m(m0),.d0(s0),.d1(s2),.out(a));
+    MUX2to1 #(4) M1(.m(m1),.d0(s1),.d1(s3),.out(b));
+    MUX2to1 #(4) M2(.m(m2),.d0(x0),.d1(s1),.out(i0));
+    MUX3to1 #(4) M3(.m(m3),.d0(x1),.d1(s0),.d2(s2),.out(i1));
+    MUX3to1 #(4) M4(.m(m4),.d0(x2),.d1(s1),.d2(s3),.out(i2));
+    MUX2to1 #(4) M5(.m(m5),.d0(x3),.d1(s2),.out(i3));
 
-    alu ALU(.a(a),.b(b),.m(SUB),.cf(cf),.of(),.zf(),.y());
+    alu #(4) ALU(.a(a),.b(b),.m(SUB),.cf(cf),.of(),.zf(),.y());
     //control unit
     always @(posedge clk,posedge rst)
         if(rst)
@@ -79,7 +79,6 @@ module sort #(parameter N = 32)(
     always @(*)
     begin
     {m0,m1,m2,m3,m4,m5,en0,en1,en2,en3,done} = 13'd0;
-    //{s0,s1,s2,s3} = {s0,s1,s2,s3};
     case(current_state)
       LOAD:{en0,en1,en2,en3} = 4'b1111;
       CX01,CX01S,CX01SS:begin {m2,m3} = 3'b101;en0 = cf;en1 = cf;end

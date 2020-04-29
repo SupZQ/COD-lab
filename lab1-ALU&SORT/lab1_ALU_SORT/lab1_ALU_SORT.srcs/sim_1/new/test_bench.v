@@ -53,19 +53,28 @@ alu   u_alu (
 
 initial
 begin
-        m=3'b000;a=32'h7FFF_FFFF;b=32'h7FFF_FFFF;
-    #5  m=3'b000;a=32'h7FFF_FFFF;b=32'h0000_0001;
-    #5 m=3'b000;a=32'hFFFF_FFFF;b=32'hFFFF_FFFF;
-    #5 m=3'b001;a=32'h8000_0001;b=32'h8000_0001;
-    #5 m=3'b001;a=32'h8000_0001;b=32'h7FFF_FFFF;
-    #5 m=3'b001;a=32'h0000_0001;b=32'h0000_0002;
+       m=3'b000;a=32'h7FFF_FFFF;b=32'h7FFF_FFFF;//�����?
+    #5 m=3'b000;a=32'hFFFF_FFFF;b=32'h8000_0000;//�����?
+    #5 m=3'b000;a=32'hFFFF_FFFF;b=32'h0000_0001;//0
+    #5 m=3'b000;a=32'hFFFF_FFFF;b=32'hFFFF_FFFF;//�����ӷ�
+    #5 m=3'b001;a=32'h7FFF_FFFF;b=32'h8000_0000;//�����?
+    #5 m=3'b001;a=32'h8000_0000;b=32'h7FFF_FFFF;//�����?
+    #5 m=3'b001;a=32'h0000_0001;b=32'h0000_0002;//������λ
+    #5 m=3'b001;a=32'hFFFF_FFFF;b=32'hFFFF_FFFF;//0
+    #5 m=3'b010;a=32'h1234_5678;b=32'h8765_4321;
+    #5 m=3'b010;a=32'hA5A5_A5A5;b=32'h5A5A_5A5A;
     #5 m=3'b010;a=32'hAAAA_AAAA;b=32'hAAAA_AAAA;
     #5 m=3'b010;a=32'hAAAA_AAAA;b=32'h5555_5555;
+    #5 m=3'b011;a=32'h1234_5678;b=32'h8765_4321;
+    #5 m=3'b011;a=32'hA5A5_A5A5;b=32'h5A5A_5A5A;
     #5 m=3'b011;a=32'hAAAA_AAAA;b=32'hAAAA_AAAA;
     #5 m=3'b011;a=32'hAAAA_AAAA;b=32'h5555_5555;
     #5 m=3'b100;a=32'hAAAA_AAAA;b=32'hAAAA_AAAA;
     #5 m=3'b100;a=32'hAAAA_AAAA;b=32'h5555_5555;
-    $finish;
+    #5 m=3'b100;a=32'h1234_5678;b=32'h8765_4321;
+    #5 m=3'b100;a=32'hA5A5_A5A5;b=32'h5A5A_5A5A;
+    #5  m=3'b000;a=32'h1234_5678;b=32'h8765_4321;
+
 end
 
 endmodule

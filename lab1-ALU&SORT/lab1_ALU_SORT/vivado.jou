@@ -2,36 +2,84 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Apr 27 11:28:26 2020
-# Process ID: 12112
+# Start of session at: Wed Apr 29 08:55:35 2020
+# Process ID: 11780
 # Current directory: C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8840 C:\Users\77060\Desktop\COD-exp\lab1_ALU_SORT\lab1_ALU_SORT.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16544 C:\Users\77060\Desktop\COD-exp\lab1_ALU_SORT\lab1_ALU_SORT.xpr
 # Log file: C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT/vivado.log
 # Journal file: C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT/lab1_ALU_SORT.xpr
 update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_alu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_alu.tcl
+close_sim
+launch_simulation
+source tb_alu.tcl
+restart
+run all
+close_sim
+launch_simulation
+launch_simulation
+source tb_alu.tcl
+restart
+run all
+close_sim
+launch_simulation
+source tb_alu.tcl
+close_sim
+launch_simulation
+source tb_alu.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_sort [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation
+source tb_sort.tcl
+close_sim
+launch_simulation
+source tb_sort.tcl
+close_sim
+launch_simulation
+launch_simulation
+source tb_sort.tcl
+close_sim
+launch_simulation
+source tb_sort.tcl
+close_sim
+launch_simulation
+source tb_sort.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top alu [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
 update_compile_order -fileset sources_1
-launch_simulation
-update_compile_order -fileset sources_1
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-source tb_sort.tcl
-close_sim
-launch_simulation
-source tb_sort.tcl
-close_sim
-launch_simulation
-source tb_sort.tcl
-close_sim
-launch_simulation
-source tb_sort.tcl
-close_sim
 synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sort [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
 close_design
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_simulation
+source tb_sort.tcl
+close_sim

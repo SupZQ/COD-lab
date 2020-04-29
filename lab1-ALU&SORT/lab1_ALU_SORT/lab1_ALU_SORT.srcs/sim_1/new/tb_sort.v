@@ -22,7 +22,7 @@
 module tb_sort;
 
 // sort Parameters
-parameter N = 32;
+parameter N = 4;
 parameter PERIOD  = 10    ;
 
 
@@ -72,27 +72,36 @@ initial
     
     #(PERIOD*8) rst = 1;
     #PERIOD rst = 0;    
+    #(PERIOD*8) rst = 1;
+    #PERIOD rst = 0;
     end
 initial
 begin
     x0 = 3;
     x1 = 5;
     x2 = 7;
-    x3 = 9;
+    x3 = 6;
     
     #(PERIOD*9);
-    x0 = 10;
-    x1 = 8;
-    x2 = 15;
-    x3 = 12;
+    x0 = 4;
+    x1 = 3;
+    x2 = 2;
+    x3 = 5;
 
     #(PERIOD*9);
-    x0 = 8;
-    x1 = 3;
-    x2 = 9;
+    x0 = 2;
+    x1 = -3;
+    x2 = -7;
     x3 = 5;
+
     #(PERIOD*9) 
-    $finish;
+    x0 = -1;
+    x1 = 3;
+    x2 = -3;
+    x3 = 5;
+    
+   #(PERIOD*9)
+   $finish;
 end
 
 endmodule

@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr 27 11:28:26 2020
+# Process ID: 12112
+# Current directory: C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8840 C:\Users\77060\Desktop\COD-exp\lab1_ALU_SORT\lab1_ALU_SORT.xpr
+# Log file: C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT/vivado.log
+# Journal file: C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/77060/Desktop/COD-exp/lab1_ALU_SORT/lab1_ALU_SORT.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_sort.tcl
+close_sim
+launch_simulation
+source tb_sort.tcl
+close_sim
+launch_simulation
+source tb_sort.tcl
+close_sim
+launch_simulation
+source tb_sort.tcl
+close_sim
+synth_design -rtl -name rtl_1
+close_design
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
