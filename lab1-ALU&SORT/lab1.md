@@ -6,7 +6,7 @@
 
 
 
-<img src="https://github.com/SupZQ/COD-lab/blob/master/lab1-ALU%26SORT/lab1.assets/%E6%A0%A1%E5%BE%BD.jpg" alt="校徽" style="zoom:50%;" align="center" />
+<img src="https://github.com/SupZQ/COD-lab/blob/master/lab1-ALU%26SORT/lab1.assets/%E6%A0%A1%E5%BE%BD.jpg" alt="校徽" style="zoom:15%;" align="center" />
 
 
 
@@ -56,13 +56,13 @@
 
 - 待设计的ALU模块的逻辑符号如下图所示。该模块的功能是将两操作数（a，b）按照指定的操作方式（m）进行运算，产生运算结果（y）和相应的标志（f）。
 
-<img src="lab1.assets\image-20200429013900251.png" alt="ALU-logic" style="zoom:50%;"  />
+<img src="lab1.assets\image-20200429013900251.png" alt="ALU-logic" style="zoom:20%;"  />
 
 
 
 - 操作方式m的编码与ALU的功能对应关系如下图 所示。表中标志f细化为进位/借位标志（cf）、溢出标志（of）和零标志（zf）；“*”表示根据运算结果设置相应值；“x”表示无关项，可取任意值。例如，加法运算后设置进位标志（cf）、（of）和（zf），减法运算后设置借位标志（cf）、（of）和（zf）。
 
-<img src="lab1.assets\image-20200429015106630.png" alt="image-20200429015106630" style="zoom:50%;" />
+<img src="lab1.assets\image-20200429015106630.png" alt="image-20200429015106630" style="zoom:20%;" />
 
 
 
@@ -190,15 +190,15 @@
 
 - 利用前面设计的ALU模块，辅之以若干寄存器和数据选择器，以及适当的控制器，设计实现四个4位有符号数的排序电路，其逻辑符号如下图所示所示：
 
-  <img src="lab1.assets\image-20200429115207291.png" alt="" style="zoom:40%;" />
+  <img src="lab1.assets\image-20200429115207291.png" alt="" style="zoom:20%;" />
 
 - **四个符号数排序电路的数据通路如下图所示**：
 
-  <img src="lab1.assets\image-20200429150353894.png" alt="image-20200429150353894" style="zoom:30%;" />
+  <img src="lab1.assets\image-20200429150353894.png" alt="image-20200429150353894" style="zoom:15%;" />
 
 - **排序电路状态控制图如下**：
 
-  <img src="lab1.assets\image-20200429153204970.png" alt="state graph" style="zoom:30%;" />
+  <img src="lab1.assets\image-20200429153204970.png" alt="state graph" style="zoom:15%;" />
 
 - **排序电路Verilog实现：**
 
@@ -389,4 +389,4 @@
 
    答：如下图所示，减少了MUX的使用，同时也可以在减少一个时钟周期的情况下完成排序，因为s2、s3比较的同时s0和s1也可以比较。
 
-   <img src="lab1.assets\image-20200429162222176.png" alt="adjusted graph" style="zoom:30%;" />
+   <img src="lab1.assets\image-20200429162222176.png" alt="adjusted graph" style="zoom:15%;" />
