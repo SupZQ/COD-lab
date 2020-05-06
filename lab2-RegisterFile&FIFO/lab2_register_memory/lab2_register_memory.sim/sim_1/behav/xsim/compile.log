@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.srcs/sources_1/ip/blk_mem/sim/blk_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.srcs/sources_1/new/MUX2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.srcs/sources_1/new/flag_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flag_FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.srcs/sources_1/new/pt_read.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pt_read
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.srcs/sources_1/new/pt_write.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pt_write
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.srcs/sources_1/new/signal_edge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signal_edge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.srcs/sim_1/new/tb_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo

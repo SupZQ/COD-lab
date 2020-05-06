@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  5 21:51:33 2020
+# Process ID: 14760
+# Current directory: C:/Users/77060/Desktop/COD-exp/lab2_register_memory
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3544 C:\Users\77060\Desktop\COD-exp\lab2_register_memory\lab2_register_memory.xpr
+# Log file: C:/Users/77060/Desktop/COD-exp/lab2_register_memory/vivado.log
+# Journal file: C:/Users/77060/Desktop/COD-exp/lab2_register_memory\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dist_mem' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.sim/sim_1/behav/xsim/dist_mem.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.sim/sim_1/behav/xsim/dist_men.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_dist_mem_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.sim/sim_1/behav/xsim'
+"xelab -wto 19d9c8b51e0646f6bee07294d84b92bc --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_dist_mem_behav xil_defaultlib.tb_dist_mem xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 19d9c8b51e0646f6bee07294d84b92bc --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_dist_mem_behav xil_defaultlib.tb_dist_mem xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_dist_mem_behav -key {Behavioral:sim_1:Functional:tb_dist_mem} -tclbatch {tb_dist_mem.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_dist_mem.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+$finish called at time : 140 ns : File "C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.srcs/sim_1/new/tb_dist_mem.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_dist_mem_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 788.719 ; gain = 53.926
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  5 21:53:18 2020...

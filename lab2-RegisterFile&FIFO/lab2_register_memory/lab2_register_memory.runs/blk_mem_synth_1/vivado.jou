@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  5 20:14:01 2020
+# Process ID: 15292
+# Current directory: C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.runs/blk_mem_synth_1
+# Command line: vivado.exe -log blk_mem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem.tcl
+# Log file: C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.runs/blk_mem_synth_1/blk_mem.vds
+# Journal file: C:/Users/77060/Desktop/COD-exp/lab2_register_memory/lab2_register_memory.runs/blk_mem_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem.tcl -notrace
