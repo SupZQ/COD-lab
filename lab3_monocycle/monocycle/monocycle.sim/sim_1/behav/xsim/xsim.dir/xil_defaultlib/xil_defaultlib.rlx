@@ -1,0 +1,22 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sim_1/new/tb_cpu.v,1589244778,verilog,,,,tb_cpu,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sim_1/new/tb_dbu_top.v,1589526224,verilog,,,,tb_dbu_top,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/RAM/sim/RAM.v,1589293074,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/ROM/sim/ROM.v,,RAM,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/ROM/sim/ROM.v,1589244799,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ADD.v,,ROM,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ADD.v,1589211259,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v,,ADD,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v,1589208777,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v,,alu,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v,1589269936,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Debug_Unit.v,,Control_Unit,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Debug_Unit.v,1589302491,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v,,Debug_Unit,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v,1589212078,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX_num.v,,MUX2to1,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX_num.v,1589283159,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v,,MUX_num,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v,1589298016,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/dbu_top.v,,cpu,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/dbu_top.v,1589297922,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/pc.v,,dbu_top,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/pc.v,1589247344,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/refresh.v,,pc,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/refresh.v,1589283258,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/register_file.v,,refresh,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/register_file.v,1589267828,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/seven_segment.v,,register_file,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/seven_segment.v,1589287140,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/signal_edge.v,,seven_segment,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/signal_edge.v,1589298143,verilog,,C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sim_1/new/tb_dbu_top.v,,signal_edge,,,,,,,,

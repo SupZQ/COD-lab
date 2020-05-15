@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 12 20:53:48 2020
+# Process ID: 35868
+# Current directory: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/RAM_synth_1
+# Command line: vivado.exe -log RAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAM.tcl
+# Log file: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/RAM_synth_1/RAM.vds
+# Journal file: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/RAM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source RAM.tcl -notrace

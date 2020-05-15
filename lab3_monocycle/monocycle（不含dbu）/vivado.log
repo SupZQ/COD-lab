@@ -1,0 +1,1233 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 14 01:39:47 2020
+# Process ID: 27752
+# Current directory: C:/Users/77060/Desktop/monocycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17472 C:\Users\77060\Desktop\monocycle\monocycle.xpr
+# Log file: C:/Users/77060/Desktop/monocycle/vivado.log
+# Journal file: C:/Users/77060/Desktop/monocycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/77060/Desktop/monocycle/monocycle.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/RAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/ROM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xelab -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'd0' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:45]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -view {C:/Users/77060/Desktop/monocycle/tb_cpu_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/77060/Desktop/monocycle/tb_cpu_behav.wcfg
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 825.563 ; gain = 22.109
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 825.563 ; gain = 37.426
+save_wave_config {C:/Users/77060/Desktop/monocycle/tb_cpu_behav.wcfg}
+save_wave_config {C:/Users/77060/Desktop/monocycle/tb_cpu_behav.wcfg}
+save_wave_config {C:/Users/77060/Desktop/monocycle/tb_cpu_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 840.047 ; gain = 10.492
+reset_run RAM_synth_1
+launch_runs RAM_synth_1
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM'...
+[Thu May 14 10:29:16 2020] Launched RAM_synth_1...
+Run output will be captured here: C:/Users/77060/Desktop/monocycle/monocycle.runs/RAM_synth_1/runme.log
+wait_on_run RAM_synth_1
+[Thu May 14 10:29:16 2020] Waiting for RAM_synth_1 to finish...
+[Thu May 14 10:29:21 2020] Waiting for RAM_synth_1 to finish...
+[Thu May 14 10:29:26 2020] Waiting for RAM_synth_1 to finish...
+[Thu May 14 10:29:31 2020] Waiting for RAM_synth_1 to finish...
+[Thu May 14 10:29:41 2020] Waiting for RAM_synth_1 to finish...
+[Thu May 14 10:29:51 2020] Waiting for RAM_synth_1 to finish...
+[Thu May 14 10:30:01 2020] Waiting for RAM_synth_1 to finish...
+
+*** Running vivado
+    with args -log RAM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAM.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source RAM.tcl -notrace
+Command: synth_design -top RAM -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18104 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 698.973 ; gain = 176.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RAM' [c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/RAM/synth/RAM.vhd:69]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 256 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 1 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 1 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: RAM.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_13' declared at 'c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/RAM/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_13' [c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/RAM/synth/RAM.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (4#1) [c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/RAM/synth/RAM.vhd:69]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[31]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[30]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[29]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[28]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[27]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[26]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[25]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[24]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[23]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[22]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[21]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[20]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[19]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[18]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[17]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[16]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[15]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[14]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[13]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[12]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[11]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[10]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[9]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[8]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[7]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[6]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[5]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[4]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[3]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[2]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[1]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[0]
+WARNING: [Synth 8-3331] design spram has unconnected port i_ce
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_ce
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_rst
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[16]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[16]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 768.918 ; gain = 246.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 768.918 ; gain = 246.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 768.918 ; gain = 246.824
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/RAM/RAM_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/RAM/RAM_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/77060/Desktop/monocycle/monocycle.runs/RAM_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/77060/Desktop/monocycle/monocycle.runs/RAM_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 843.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 854.336 ; gain = 10.973
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 854.336 ; gain = 332.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 854.336 ; gain = 332.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/77060/Desktop/monocycle/monocycle.runs/RAM_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 854.336 ; gain = 332.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 854.336 ; gain = 332.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module spram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 854.336 ; gain = 332.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                                                | Inference | Size (Depth x Width) | Primitives       | 
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|U0          | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 256 x 32             | RAM256X1S x 32   | 
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 854.336 ; gain = 332.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 854.336 ; gain = 332.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                                                | Inference | Size (Depth x Width) | Primitives       | 
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|U0          | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 256 x 32             | RAM256X1S x 32   | 
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 854.406 ; gain = 332.313
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 870.223 ; gain = 348.129
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 870.223 ; gain = 348.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 870.223 ; gain = 348.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 870.223 ; gain = 348.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 870.223 ; gain = 348.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 870.223 ; gain = 348.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |RAM256X1S |    32|
+|2     |FDRE      |    32|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------------------------+---------------------------+------+
+|      |Instance                          |Module                     |Cells |
++------+----------------------------------+---------------------------+------+
+|1     |top                               |                           |    64|
+|2     |  U0                              |dist_mem_gen_v8_0_13       |    64|
+|3     |    \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_13_synth |    64|
+|4     |      \gen_sp_ram.spram_inst      |spram                      |    64|
++------+----------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 870.223 ; gain = 348.129
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 112 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 870.223 ; gain = 262.711
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 870.223 ; gain = 348.129
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 888.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 888.672 ; gain = 597.957
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 888.672 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/77060/Desktop/monocycle/monocycle.runs/RAM_synth_1/RAM.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP RAM, cache-ID = 8c35d22313243058
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 888.672 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/77060/Desktop/monocycle/monocycle.runs/RAM_synth_1/RAM.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RAM_utilization_synth.rpt -pb RAM_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 14 10:29:58 2020...
+[Thu May 14 10:30:01 2020] RAM_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:45 . Memory (MB): peak = 841.969 ; gain = 0.000
+reset_run ROM_synth_1
+launch_runs ROM_synth_1
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM'...
+[Thu May 14 10:30:02 2020] Launched ROM_synth_1...
+Run output will be captured here: C:/Users/77060/Desktop/monocycle/monocycle.runs/ROM_synth_1/runme.log
+wait_on_run ROM_synth_1
+[Thu May 14 10:30:03 2020] Waiting for ROM_synth_1 to finish...
+[Thu May 14 10:30:08 2020] Waiting for ROM_synth_1 to finish...
+[Thu May 14 10:30:13 2020] Waiting for ROM_synth_1 to finish...
+[Thu May 14 10:30:18 2020] Waiting for ROM_synth_1 to finish...
+[Thu May 14 10:30:28 2020] Waiting for ROM_synth_1 to finish...
+[Thu May 14 10:30:38 2020] Waiting for ROM_synth_1 to finish...
+[Thu May 14 10:30:48 2020] Waiting for ROM_synth_1 to finish...
+
+*** Running vivado
+    with args -log ROM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ROM.tcl -notrace
+Command: synth_design -top ROM -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 29408 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 699.211 ; gain = 177.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ROM' [c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/ROM/synth/ROM.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 256 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: ROM.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_13' declared at 'c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/ROM/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_13' [c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/ROM/synth/ROM.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (4#1) [c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/ROM/synth/ROM.vhd:66]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[16]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port clk
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo_ce
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo_rst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_rom has unconnected port qspo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[16]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[16]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 774.078 ; gain = 252.145
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 774.078 ; gain = 252.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 774.078 ; gain = 252.145
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/ROM/ROM_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/ROM/ROM_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/77060/Desktop/monocycle/monocycle.runs/ROM_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/77060/Desktop/monocycle/monocycle.runs/ROM_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 795.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 806.473 ; gain = 11.082
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 806.473 ; gain = 284.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 806.473 ; gain = 284.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/77060/Desktop/monocycle/monocycle.runs/ROM_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 806.473 ; gain = 284.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 806.473 ; gain = 284.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 806.473 ; gain = 284.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------------+-------------------------------------------------------+---------------+----------------+
+|Module Name              | RTL Object                                            | Depth x Width | Implemented As | 
++-------------------------+-------------------------------------------------------+---------------+----------------+
+|dist_mem_gen_v8_0_13_rom | rom[255]                                              | 256x18        | LUT            | 
+|dist_mem_gen_v8_0_13     | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[255] | 256x18        | LUT            | 
++-------------------------+-------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 847.738 ; gain = 325.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 847.813 ; gain = 325.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 857.488 ; gain = 335.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.305 ; gain = 350.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.305 ; gain = 350.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.305 ; gain = 350.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.305 ; gain = 350.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.305 ; gain = 350.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.305 ; gain = 350.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     2|
+|2     |LUT4 |     3|
+|3     |LUT5 |     1|
+|4     |LUT6 |    15|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------------------------+---------------------------+------+
+|      |Instance                          |Module                     |Cells |
++------+----------------------------------+---------------------------+------+
+|1     |top                               |                           |    21|
+|2     |  U0                              |dist_mem_gen_v8_0_13       |    21|
+|3     |    \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_13_synth |    21|
+|4     |      \gen_rom.rom_inst           |dist_mem_gen_v8_0_13_rom   |    21|
++------+----------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.305 ; gain = 350.371
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 146 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 872.305 ; gain = 317.977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 872.305 ; gain = 350.371
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 891.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 891.688 ; gain = 600.609
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 891.688 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/77060/Desktop/monocycle/monocycle.runs/ROM_synth_1/ROM.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ROM, cache-ID = 960b8b89560a434a
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 891.688 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/77060/Desktop/monocycle/monocycle.runs/ROM_synth_1/ROM.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ROM_utilization_synth.rpt -pb ROM_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 14 10:30:45 2020...
+[Thu May 14 10:30:48 2020] ROM_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:45 . Memory (MB): peak = 854.270 ; gain = 9.047
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: cpu
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ALU.v:32]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ALU.v:33]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ALU.v:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ALU.v:35]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ALU.v:36]
+WARNING: [Synth 8-2507] parameter declaration becomes local in register_file with formal parameter declaration list [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/register_file.v:36]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1229.520 ; gain = 150.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cpu' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/pc.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pc' (1#1) [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADD' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ADD.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADD' (2#1) [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ADD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/77060/Desktop/monocycle/.Xil/Vivado-27752-LAPTOP-A473LDFT/realtime/ROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (3#1) [C:/Users/77060/Desktop/monocycle/.Xil/Vivado-27752-LAPTOP-A473LDFT/realtime/ROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MUX2to1' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX2to1' (4#1) [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'out' does not match port width (32) of module 'MUX2to1' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:45]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/register_file.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter NUM bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (5#1) [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/register_file.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v:23]
+	Parameter add bound to: 6'b000000 
+	Parameter addi bound to: 6'b001000 
+	Parameter lw bound to: 6'b100011 
+	Parameter sw bound to: 6'b101011 
+	Parameter beq bound to: 6'b000100 
+	Parameter j bound to: 6'b000010 
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (6#1) [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ALU.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter ADD bound to: 3'b000 
+	Parameter SUB bound to: 3'b001 
+	Parameter AND bound to: 3'b010 
+	Parameter OR bound to: 3'b011 
+	Parameter XOR bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'alu' (7#1) [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-7023] instance 'ALU' of module 'alu' has 7 connections declared, but only 5 given [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:58]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/77060/Desktop/monocycle/.Xil/Vivado-27752-LAPTOP-A473LDFT/realtime/RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (8#1) [C:/Users/77060/Desktop/monocycle/.Xil/Vivado-27752-LAPTOP-A473LDFT/realtime/RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (9#1) [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1271.234 ; gain = 192.422
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1271.234 ; gain = 192.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1271.234 ; gain = 192.422
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/ROM/ROM.dcp' for cell 'IM'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/RAM/RAM.dcp' for cell 'DM'
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1421.965 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 32 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1434.305 ; gain = 355.492
+28 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1434.305 ; gain = 580.035
+close_design
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/RAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/ROM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/RAM/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/ROM/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xelab -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'y' on this module [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:114]
+ERROR: [VRFC 10-3180] cannot find port 'b' on this module [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:113]
+ERROR: [VRFC 10-3180] cannot find port 'a' on this module [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:112]
+ERROR: [VRFC 10-3180] cannot find port 'y' on this module [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:120]
+ERROR: [VRFC 10-3180] cannot find port 'b' on this module [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:119]
+ERROR: [VRFC 10-3180] cannot find port 'a' on this module [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:118]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/RAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/ROM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/RAM/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/ip/ROM/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/monocycle/monocycle.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xelab -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'd0' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:58]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'd1' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:59]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'out' [C:/Users/77060/Desktop/monocycle/monocycle.srcs/sources_1/new/cpu.v:60]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.ADD
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.MUX2to1
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim/xsim.dir/tb_cpu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 14 11:06:58 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1653.031 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/77060/Desktop/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -view {C:/Users/77060/Desktop/monocycle/tb_cpu_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/77060/Desktop/monocycle/tb_cpu_behav.wcfg
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1653.031 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1653.031 ; gain = 0.000
+save_wave_config {C:/Users/77060/Desktop/monocycle/tb_cpu_behav.wcfg}
+save_wave_config {C:/Users/77060/Desktop/monocycle/tb_cpu_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 14 15:23:53 2020...

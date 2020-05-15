@@ -1,0 +1,466 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 14 11:42:56 2020
+# Process ID: 24416
+# Current directory: C:/Users/77060/Desktop/COD-exp/monocycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36168 C:\Users\77060\Desktop\COD-exp\monocycle\monocycle.xpr
+# Log file: C:/Users/77060/Desktop/COD-exp/monocycle/vivado.log
+# Journal file: C:/Users/77060/Desktop/COD-exp/monocycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 747.883 ; gain = 69.125
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: dbu_top
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:32]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:33]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:35]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:36]
+WARNING: [Synth 8-2507] parameter declaration becomes local in register_file with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/register_file.v:38]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1187.781 ; gain = 130.273
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dbu_top' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/dbu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Debug_Unit' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Debug_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'signal_edge' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/signal_edge.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'signal_edge' (1#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/signal_edge.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6157] synthesizing module 'refresh' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/refresh.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/refresh.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'refresh' (2#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/refresh.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX_num' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX_num.v:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX_num.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_num' (3#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX_num.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (4#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Debug_Unit' (5#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Debug_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/pc.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pc' (6#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADD' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ADD.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADD' (7#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ADD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/77060/Desktop/COD-exp/monocycle/.Xil/Vivado-24416-LAPTOP-A473LDFT/realtime/ROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (8#1) [C:/Users/77060/Desktop/COD-exp/monocycle/.Xil/Vivado-24416-LAPTOP-A473LDFT/realtime/ROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MUX2to1' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX2to1' (9#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'out' does not match port width (32) of module 'MUX2to1' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:58]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/register_file.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter NUM bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (10#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/register_file.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'dbu_ra' does not match port width (5) of module 'register_file' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:63]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v:23]
+	Parameter add bound to: 6'b000000 
+	Parameter addi bound to: 6'b001000 
+	Parameter lw bound to: 6'b100011 
+	Parameter sw bound to: 6'b101011 
+	Parameter beq bound to: 6'b000100 
+	Parameter j bound to: 6'b000010 
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (11#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter ADD bound to: 3'b000 
+	Parameter SUB bound to: 3'b001 
+	Parameter AND bound to: 3'b010 
+	Parameter OR bound to: 3'b011 
+	Parameter XOR bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'alu' (12#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-7023] instance 'ALU' of module 'alu' has 7 connections declared, but only 5 given [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:72]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/77060/Desktop/COD-exp/monocycle/.Xil/Vivado-24416-LAPTOP-A473LDFT/realtime/RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (13#1) [C:/Users/77060/Desktop/COD-exp/monocycle/.Xil/Vivado-24416-LAPTOP-A473LDFT/realtime/RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (14#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dbu_top' (15#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/dbu_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1234.840 ; gain = 177.332
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1234.840 ; gain = 177.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1234.840 ; gain = 177.332
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/ROM/ROM.dcp' for cell 'cpu/IM'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/RAM/RAM.dcp' for cell 'cpu/DM'
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/constrs_1/new/monocycle.xdc]
+Finished Parsing XDC File [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/constrs_1/new/monocycle.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1381.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 64 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 1406.336 ; gain = 348.828
+41 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1406.336 ; gain = 485.191
+close_design
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dbu_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/RAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/ROM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_dbu_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/seven_segment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/signal_edge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signal_edge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sim_1/new/tb_dbu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_dbu_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xelab -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_dbu_top_behav xil_defaultlib.tb_dbu_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_dbu_top_behav xil_defaultlib.tb_dbu_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'd0' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:58]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'dbu_ra' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:63]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.signal_edge
+Compiling module xil_defaultlib.refresh
+Compiling module xil_defaultlib.MUX_num
+Compiling module xil_defaultlib.seven_segment
+Compiling module xil_defaultlib.Debug_Unit
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.ADD
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.MUX2to1
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.dbu_top
+Compiling module xil_defaultlib.tb_dbu_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_dbu_top_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/xsim.dir/tb_dbu_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/xsim.dir/tb_dbu_top_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu May 14 14:08:30 2020. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu May 14 14:08:30 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1411.113 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_dbu_top_behav -key {Behavioral:sim_1:Functional:tb_dbu_top} -tclbatch {tb_dbu_top.tcl} -view {C:/Users/77060/Desktop/COD-exp/monocycle/tb_dbu_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/77060/Desktop/COD-exp/monocycle/tb_dbu_top_behav.wcfg
+source tb_dbu_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+$finish called at time : 790 ns : File "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sim_1/new/tb_dbu_top.v" Line 131
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1411.113 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_dbu_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1411.113 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dbu_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/RAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/ROM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_dbu_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/RAM/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/ROM/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Debug_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Debug_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX_num.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_num
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/dbu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/refresh.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module refresh
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/seven_segment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/signal_edge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signal_edge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sim_1/new/tb_dbu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_dbu_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xelab -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_dbu_top_behav xil_defaultlib.tb_dbu_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_dbu_top_behav xil_defaultlib.tb_dbu_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'd0' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:58]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'dbu_ra' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:63]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.signal_edge
+Compiling module xil_defaultlib.refresh
+Compiling module xil_defaultlib.MUX_num
+Compiling module xil_defaultlib.seven_segment
+Compiling module xil_defaultlib.Debug_Unit
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.ADD
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.MUX2to1
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.dbu_top
+Compiling module xil_defaultlib.tb_dbu_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_dbu_top_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/xsim.dir/tb_dbu_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri May 15 14:57:35 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_dbu_top_behav -key {Behavioral:sim_1:Functional:tb_dbu_top} -tclbatch {tb_dbu_top.tcl} -view {C:/Users/77060/Desktop/COD-exp/monocycle/tb_dbu_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/77060/Desktop/COD-exp/monocycle/tb_dbu_top_behav.wcfg
+source tb_dbu_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+$finish called at time : 660 ns : File "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sim_1/new/tb_dbu_top.v" Line 131
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1542.465 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_dbu_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1542.465 ; gain = 0.000
+save_wave_config {C:/Users/77060/Desktop/COD-exp/monocycle/tb_dbu_top_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dbu_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/RAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/ROM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/ins.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_dbu_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/RAM/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/ROM/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Debug_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Debug_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX_num.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_num
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/dbu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/refresh.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module refresh
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/seven_segment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/signal_edge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signal_edge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sim_1/new/tb_dbu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_dbu_top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+"xelab -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_dbu_top_behav xil_defaultlib.tb_dbu_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1e17177cbd64e0baaff85361395c828 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_dbu_top_behav xil_defaultlib.tb_dbu_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'd0' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:58]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'dbu_ra' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:63]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.signal_edge
+Compiling module xil_defaultlib.refresh
+Compiling module xil_defaultlib.MUX_num
+Compiling module xil_defaultlib.seven_segment
+Compiling module xil_defaultlib.Debug_Unit
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.ADD
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.MUX2to1
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.dbu_top
+Compiling module xil_defaultlib.tb_dbu_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_dbu_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_dbu_top_behav -key {Behavioral:sim_1:Functional:tb_dbu_top} -tclbatch {tb_dbu_top.tcl} -view {C:/Users/77060/Desktop/COD-exp/monocycle/tb_dbu_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/77060/Desktop/COD-exp/monocycle/tb_dbu_top_behav.wcfg
+source tb_dbu_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+$finish called at time : 790 ns : File "C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sim_1/new/tb_dbu_top.v" Line 131
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.465 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_dbu_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1542.465 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 15 15:55:07 2020...

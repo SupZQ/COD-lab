@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 13 20:27:38 2020
+# Process ID: 31460
+# Current directory: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17696 C:\Users\77060\Desktop\COD-exp\monocycle\monocycle.sim\sim_1\behav\xsim\tb_dbu_top_behav.wdb
+# Log file: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim/vivado.log
+# Journal file: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.sim/sim_1/behav/xsim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\Users\77060\Desktop\COD-exp\monocycle\monocycle.sim\sim_1\behav\xsim\tb_dbu_top_behav.wdb}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 13 20:30:32 2020...

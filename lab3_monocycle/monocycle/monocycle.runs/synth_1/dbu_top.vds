@@ -1,0 +1,466 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 13 01:12:36 2020
+# Process ID: 36276
+# Current directory: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/synth_1
+# Command line: vivado.exe -log dbu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dbu_top.tcl
+# Log file: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/synth_1/dbu_top.vds
+# Journal file: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source dbu_top.tcl -notrace
+Command: synth_design -top dbu_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 35816 
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:32]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:33]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:35]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:36]
+WARNING: [Synth 8-2507] parameter declaration becomes local in register_file with formal parameter declaration list [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/register_file.v:38]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 704.219 ; gain = 182.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dbu_top' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/dbu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Debug_Unit' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Debug_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'signal_edge' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/signal_edge.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'signal_edge' (1#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/signal_edge.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6157] synthesizing module 'refresh' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/refresh.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/refresh.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'refresh' (2#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/refresh.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX_num' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX_num.v:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX_num.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_num' (3#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX_num.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (4#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Debug_Unit' (5#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Debug_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/pc.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pc' (6#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADD' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ADD.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADD' (7#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ADD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/synth_1/.Xil/Vivado-36276-LAPTOP-A473LDFT/realtime/ROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (8#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/synth_1/.Xil/Vivado-36276-LAPTOP-A473LDFT/realtime/ROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MUX2to1' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX2to1' (9#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/MUX2to1.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'out' does not match port width (32) of module 'MUX2to1' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:58]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/register_file.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter NUM bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (10#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/register_file.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'dbu_ra' does not match port width (5) of module 'register_file' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:63]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v:23]
+	Parameter add bound to: 6'b000000 
+	Parameter addi bound to: 6'b001000 
+	Parameter lw bound to: 6'b100011 
+	Parameter sw bound to: 6'b101011 
+	Parameter beq bound to: 6'b000100 
+	Parameter j bound to: 6'b000010 
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (11#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Control_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter ADD bound to: 3'b000 
+	Parameter SUB bound to: 3'b001 
+	Parameter AND bound to: 3'b010 
+	Parameter OR bound to: 3'b011 
+	Parameter XOR bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'alu' (12#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-7023] instance 'ALU' of module 'alu' has 7 connections declared, but only 5 given [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:72]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/synth_1/.Xil/Vivado-36276-LAPTOP-A473LDFT/realtime/RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (13#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/synth_1/.Xil/Vivado-36276-LAPTOP-A473LDFT/realtime/RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (14#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dbu_top' (15#1) [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/dbu_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 745.246 ; gain = 223.172
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 745.246 ; gain = 223.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 745.246 ; gain = 223.172
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/RAM/RAM/RAM_in_context.xdc] for cell 'cpu/DM'
+Finished Parsing XDC File [c:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/RAM/RAM/RAM_in_context.xdc] for cell 'cpu/DM'
+Parsing XDC File [c:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/ROM/ROM/ROM_in_context.xdc] for cell 'cpu/IM'
+Finished Parsing XDC File [c:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/ip/ROM/ROM/ROM_in_context.xdc] for cell 'cpu/IM'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 876.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 876.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 876.727 ; gain = 354.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 876.727 ; gain = 354.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for cpu/DM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cpu/IM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 876.727 ; gain = 354.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/Debug_Unit.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'cf_reg' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'of_reg' [C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.srcs/sources_1/new/ALU.v:43]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 876.727 ; gain = 354.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 33    
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   8 Input     12 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 31    
+	   6 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module signal_edge 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module refresh 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module Debug_Unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input     12 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ADD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module MUX2to1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module register_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module Control_Unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      8 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   6 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design dbu_top has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design dbu_top has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design dbu_top has port led[13] driven by constant 0
+WARNING: [Synth 8-3917] design dbu_top has port led[12] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/Regs/REG_FILE_reg[0][31] )
+WARNING: [Synth 8-3332] Sequential element (cpu/ALU/cf_reg) is unused and will be removed from module dbu_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ALU/of_reg) is unused and will be removed from module dbu_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 876.727 ; gain = 354.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 876.727 ; gain = 354.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 876.727 ; gain = 354.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 883.563 ; gain = 361.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 896.383 ; gain = 374.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 896.383 ; gain = 374.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 896.383 ; gain = 374.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 896.383 ; gain = 374.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 896.383 ; gain = 374.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 896.383 ; gain = 374.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ROM           |         1|
+|2     |RAM           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |RAM    |     1|
+|2     |ROM    |     1|
+|3     |BUFG   |     2|
+|4     |CARRY4 |    38|
+|5     |LUT1   |     7|
+|6     |LUT2   |     8|
+|7     |LUT3   |    73|
+|8     |LUT4   |    50|
+|9     |LUT5   |   235|
+|10    |LUT6   |   847|
+|11    |MUXF7  |   416|
+|12    |MUXF8  |    78|
+|13    |FDCE   |    41|
+|14    |FDRE   |  1017|
+|15    |IBUF   |    10|
+|16    |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+--------------+------+
+|      |Instance      |Module        |Cells |
++------+--------------+--------------+------+
+|1     |top           |              |  2950|
+|2     |  cpu         |cpu           |  2837|
+|3     |    ALU       |alu           |    96|
+|4     |    PC        |pc            |   150|
+|5     |    PC_beq    |ADD           |    35|
+|6     |    PCplus4   |ADD_2         |    12|
+|7     |    Regs      |register_file |  2438|
+|8     |  dbu         |Debug_Unit    |    69|
+|9     |    dec_edge  |signal_edge   |     3|
+|10    |    inc_edge  |signal_edge_0 |     4|
+|11    |    segment   |seven_segment |    35|
+|12    |      refresh |refresh       |    35|
+|13    |    step_edge |signal_edge_1 |     3|
++------+--------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 896.383 ; gain = 374.309
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 896.383 ; gain = 242.828
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 896.383 ; gain = 374.309
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 532 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'dbu_top' is not ideal for floorplanning, since the cellview 'register_file' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 910.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+76 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 910.906 ; gain = 620.773
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 910.906 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/synth_1/dbu_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dbu_top_utilization_synth.rpt -pb dbu_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 13 01:13:19 2020...

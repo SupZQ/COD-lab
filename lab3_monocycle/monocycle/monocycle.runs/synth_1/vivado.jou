@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 13 01:12:36 2020
+# Process ID: 36276
+# Current directory: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/synth_1
+# Command line: vivado.exe -log dbu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dbu_top.tcl
+# Log file: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/synth_1/dbu_top.vds
+# Journal file: C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source dbu_top.tcl -notrace

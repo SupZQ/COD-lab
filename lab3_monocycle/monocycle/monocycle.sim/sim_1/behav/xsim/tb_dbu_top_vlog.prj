@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../monocycle.srcs/sources_1/ip/RAM/sim/RAM.v" \
+"../../../../monocycle.srcs/sources_1/ip/ROM/sim/ROM.v" \
+"../../../../monocycle.srcs/sources_1/new/ADD.v" \
+"../../../../monocycle.srcs/sources_1/new/ALU.v" \
+"../../../../monocycle.srcs/sources_1/new/Control_Unit.v" \
+"../../../../monocycle.srcs/sources_1/new/Debug_Unit.v" \
+"../../../../monocycle.srcs/sources_1/new/MUX2to1.v" \
+"../../../../monocycle.srcs/sources_1/new/MUX_num.v" \
+"../../../../monocycle.srcs/sources_1/new/cpu.v" \
+"../../../../monocycle.srcs/sources_1/new/dbu_top.v" \
+"../../../../monocycle.srcs/sources_1/new/pc.v" \
+"../../../../monocycle.srcs/sources_1/new/refresh.v" \
+"../../../../monocycle.srcs/sources_1/new/register_file.v" \
+"../../../../monocycle.srcs/sources_1/new/seven_segment.v" \
+"../../../../monocycle.srcs/sources_1/new/signal_edge.v" \
+"../../../../monocycle.srcs/sim_1/new/tb_dbu_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

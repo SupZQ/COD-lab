@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 13 00:03:10 2020
+# Process ID: 35868
+# Current directory: C:/Users/77060/Desktop/monocycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7028 C:\Users\77060\Desktop\monocycle\monocycle.xpr
+# Log file: C:/Users/77060/Desktop/monocycle/vivado.log
+# Journal file: C:/Users/77060/Desktop/monocycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/77060/Desktop/monocycle/monocycle.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/77060/Desktop/monocycle/tb_cpu_behav.wcfg
+source tb_cpu.tcl
+close_sim

@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 14 11:42:56 2020
+# Process ID: 24416
+# Current directory: C:/Users/77060/Desktop/COD-exp/monocycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36168 C:\Users\77060\Desktop\COD-exp\monocycle\monocycle.xpr
+# Log file: C:/Users/77060/Desktop/COD-exp/monocycle/vivado.log
+# Journal file: C:/Users/77060/Desktop/COD-exp/monocycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/77060/Desktop/COD-exp/monocycle/monocycle.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+launch_simulation
+open_wave_config C:/Users/77060/Desktop/COD-exp/monocycle/tb_dbu_top_behav.wcfg
+source tb_dbu_top.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/77060/Desktop/COD-exp/monocycle/tb_dbu_top_behav.wcfg
+source tb_dbu_top.tcl
+save_wave_config {C:/Users/77060/Desktop/COD-exp/monocycle/tb_dbu_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/77060/Desktop/COD-exp/monocycle/tb_dbu_top_behav.wcfg
+source tb_dbu_top.tcl
+close_sim
