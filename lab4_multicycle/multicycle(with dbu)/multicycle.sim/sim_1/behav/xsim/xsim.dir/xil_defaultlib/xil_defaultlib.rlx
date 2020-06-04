@@ -1,0 +1,17 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sim_1/new/tb_cpu.v,1590312923,verilog,,,,tb_cpu,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/ip/RAM/sim/RAM.v,1590312945,verilog,,C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/ALU.v,,RAM,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/ALU.v,1589208777,verilog,,C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/ALU_Control.v,,alu,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/ALU_Control.v,1590306259,verilog,,C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/Control_Unit.v,,ALU_Control,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/Control_Unit.v,1591233033,verilog,,C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/Instr_Reg.v,,Control_Unit,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/Instr_Reg.v,1590314208,verilog,,C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/MUX2to1.v,,Instr_Reg,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/MUX2to1.v,1589212078,verilog,,C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/MUX4to1.v,,MUX2to1,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/MUX4to1.v,1590310408,verilog,,C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/Register.v,,MUX4to1,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/Register.v,1590310411,verilog,,C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/cpu.v,,Register,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/cpu.v,1590338953,verilog,,C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/pc.v,,cpu,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/pc.v,1590291417,verilog,,C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/register_file.v,,pc,,,,,,,,
+C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sources_1/new/register_file.v,1588775031,verilog,,C:/Users/77060/Desktop/COD-exp/lab4/multicycle/multicycle.srcs/sim_1/new/tb_cpu.v,,register_file,,,,,,,,
